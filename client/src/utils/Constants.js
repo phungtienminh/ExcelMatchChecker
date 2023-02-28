@@ -1,5 +1,5 @@
 const CONSTANTS = {
-    'BACKEND_API_URL': 'http://localhost:5050'
+    'BACKEND_API_URL': 'https://main--golden-monstera-cce419.netlify.app'
 };
 
 export default CONSTANTS;
