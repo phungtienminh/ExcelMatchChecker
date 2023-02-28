@@ -17,6 +17,11 @@ app.use(fileUpload({
     }
 }));
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+})
+
 app.get('/', (req, res) => {
     // Foo - for testing
     console.log('Worked!');
