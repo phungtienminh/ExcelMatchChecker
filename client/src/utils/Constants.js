@@ -1,5 +1,5 @@
 const CONSTANTS = {
-    'BACKEND_API_URL': 'https://main--golden-monstera-cce419.netlify.app'
+    'BACKEND_API_URL': 'https://excel-match-checker.onrender.com'
 };
 
 export default CONSTANTS;
