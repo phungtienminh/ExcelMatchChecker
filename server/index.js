@@ -10,17 +10,15 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    optionsSuccessStatus: 200
+}));
 app.use(fileUpload({
     limits: {
         fileSize: 1 * 1024 * 1024
     }
 }));
-
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    next();
-})
 
 app.get('/', (req, res) => {
     // Foo - for testing

@@ -61,7 +61,7 @@ const FileUpload = () => {
 
                 <input type="submit" value="Upload" className="btn btn-primary btn-block mt-4" />
             </form>
-            {loading && (<div className="spinner-border text-primary" role="status">
+            {loading && (<div className="spinner-border text-primary text-center" role="status">
                             <span className="visually-hidden">Loading...</span>
                         </div>)
             }
